@@ -6,7 +6,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_binary")
 #       "@org_golang_google_grpc//reflection:go_default_library",
 
 go_binary(
-    name = "server",
+    name = "go-server",
     srcs = ["server.go"],
     deps = [
         "//proto/logger:logger_go_proto",
@@ -14,4 +14,5 @@ go_binary(
         "@org_golang_google_grpc//reflection:go_default_library",
         "@com_github_golang_protobuf//jsonpb:go_default_library_gen",
     ],
+    visibility = ["//:__subpackages__"],
 )

@@ -25,6 +25,7 @@ java_binary(
     deps = [
         ":JavaLoggingClientLibrary",
     ],
+    visibility = ["//:__subpackages__"],
 )
 
 java_test(
