@@ -4,3 +4,6 @@
 # Ignore Bazel symlinks.
 bazel-*
 
+# Ignore node modules downloaded by typescript.
+typescript/node_modules
+
