@@ -1,0 +1,6 @@
+# Ignore vscode project files.
+.vscode
+
+# Ignore Bazel symlinks.
+bazel-*
+
